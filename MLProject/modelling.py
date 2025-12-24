@@ -16,7 +16,7 @@ def main(data_path):
         X, y, test_size=0.2, random_state=42
     )
 
-    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model = RandomForestClassifier(n_estimators=50, random_state=42)
 
     with mlflow.start_run():
         model.fit(X_train, y_train)
